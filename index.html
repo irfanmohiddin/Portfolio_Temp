@@ -39,13 +39,22 @@
 <nav class="hidden md:flex items-center gap-9">
 <a class="text-sm font-medium hover:text-primary transition-colors" href="Portfolio.html">Work</a>
 <a class="text-sm font-medium text-primary" href="index.html">About</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Resume</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#resume">Resume</a>
 <a class="text-sm font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
 </nav>
-<button class="md:hidden p-2 text-[#111318] dark:text-white">
+<button id="mobileMenuBtn" class="md:hidden p-2 text-[#111318] dark:text-white">
 <span class="material-symbols-outlined">menu</span>
 </button>
 </div>
+</div>
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="hidden md:hidden bg-white dark:bg-[#1e2330] border-b border-[#f0f2f4] dark:border-[#2a3140]">
+<nav class="px-4 py-4 flex flex-col gap-4">
+<a class="text-sm font-medium hover:text-primary transition-colors py-2" href="Portfolio.html">Work</a>
+<a class="text-sm font-medium text-primary py-2" href="index.html">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors py-2" href="#resume">Resume</a>
+<a class="text-sm font-medium hover:text-primary transition-colors py-2" href="contact.html">Contact</a>
+</nav>
 </div>
 </div>
 <main class="flex flex-1 flex-col items-center w-full">
@@ -63,9 +72,9 @@
 <button class="flex h-12 items-center justify-center rounded-lg bg-primary px-6 text-white text-base font-bold transition hover:bg-primary/90"><a href="contact.html">
                             Get in Touch
                         </a></button>
-<button class="flex h-12 items-center justify-center rounded-lg bg-primary/10 px-6 text-primary text-base font-bold transition hover:bg-primary/20 dark:bg-white/10 dark:text-white dark:hover:bg-white/20">
+<a href="#resume" class="flex h-12 items-center justify-center rounded-lg bg-primary/10 px-6 text-primary text-base font-bold transition hover:bg-primary/20 dark:bg-white/10 dark:text-white dark:hover:bg-white/20">
                             Download CV
-                        </button>
+                        </a>
 </div>
 <div class="flex gap-4 mt-2">
 <a class="text-gray-500 hover:text-primary transition-colors dark:text-gray-400 dark:hover:text-white" href="https://www.linkedin.com/in/shaik-irfan-mohiddin-537589323/">
@@ -96,9 +105,9 @@
 <p class="mb-4">
 I am a computer science student with a strong interest in building digital products that are not only functional but also intuitive and meaningful. I believe good software goes beyond writing correct code—it should feel seamless to use and thoughtfully designed. My interest in web development gradually evolved into full-stack development as I became more curious about how users interact with systems from front end to backend.</p>
 <p class="mb-4">
-I enjoy working in collaborative environments where ideas are shaped through discussion and iteration. From designing authentication flows to developing dashboards and backend logic, I focus on keeping systems simple, efficient, and easy to use. I strongly follow the “less is more” approach, aiming to reduce complexity, improve clarity, and remove friction at every step of the user journey.                        </p>
+I enjoy working in collaborative environments where ideas are shaped through discussion and iteration. From designing authentication flows to developing dashboards and backend logic, I focus on keeping systems simple, efficient, and easy to use. I strongly follow the "less is more" approach, aiming to reduce complexity, improve clarity, and remove friction at every step of the user journey.                        </p>
 <p>
-Outside of development, I like exploring new technologies, strengthening my problem-solving skills, and continuously learning to improve my craft. I’m motivated by building real-world solutions, growing as a developer, and contributing to products that create real value for users.                        </p>
+Outside of development, I like exploring new technologies, strengthening my problem-solving skills, and continuously learning to improve my craft. I'm motivated by building real-world solutions, growing as a developer, and contributing to products that create real value for users.                        </p>
 </div>
 </div>
 <div class="md:col-span-4 flex flex-col gap-8">
@@ -185,7 +194,7 @@ Outside of development, I like exploring new technologies, strengthening my prob
 </div>
 </div>
 </section>
-<section class="w-full px-4 md:px-10 lg:px-40 py-16 flex justify-center bg-gray-50 dark:bg-[#171c26]">
+<section id="resume" class="w-full px-4 md:px-10 lg:px-40 py-16 flex justify-center bg-gray-50 dark:bg-[#171c26]">
 <div class="max-w-[960px] w-full">
 <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8">
 <div>
@@ -197,7 +206,7 @@ Outside of development, I like exploring new technologies, strengthening my prob
                             Take a look at my full professional history, education, and credentials. Download a copy for your records.
                         </p>
 </div>
-<a class="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 text-white text-base font-bold transition hover:bg-primary/90 shadow-md" href="#">
+<a class="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 text-white text-base font-bold transition hover:bg-primary/90 shadow-md" href="Shaik_Irfan_Mohiddin_Resume.pdf" download>
 <span class="material-symbols-outlined text-[20px]">download</span>
                         Download PDF
                     </a>
@@ -205,15 +214,15 @@ Outside of development, I like exploring new technologies, strengthening my prob
 <div class="w-full bg-white dark:bg-[#1e2330] rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm overflow-hidden p-6 md:p-10">
 <div class="flex flex-col items-center justify-center py-12 text-center border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-[#1a202c]">
 <span class="material-symbols-outlined text-6xl text-gray-400 dark:text-gray-500 mb-4">picture_as_pdf</span>
-<h4 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">Resume.pdf</h4>
-<p class="text-sm text-gray-500 dark:text-gray-400 mb-6">File size: 2.4 MB</p>
+<h4 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">Shaik_Irfan_Mohiddin_Resume.pdf</h4>
+<p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Computer Science Student • Full-Stack Developer</p>
 <div class="flex gap-4">
-<button class="text-primary hover:text-primary/80 font-medium text-sm flex items-center gap-1 transition-colors">
+<a href="Shaik_Irfan_Mohiddin_Resume.pdf" target="_blank" class="text-primary hover:text-primary/80 font-medium text-sm flex items-center gap-1 transition-colors">
 <span class="material-symbols-outlined text-[18px]">visibility</span>
                                 Preview
-                            </button>
+                            </a>
 <span class="text-gray-300 dark:text-gray-600">|</span>
-<button class="text-primary hover:text-primary/80 font-medium text-sm flex items-center gap-1 transition-colors">
+<button onclick="shareResume()" class="text-primary hover:text-primary/80 font-medium text-sm flex items-center gap-1 transition-colors">
 <span class="material-symbols-outlined text-[18px]">share</span>
                                 Share
                             </button>
@@ -224,9 +233,9 @@ Outside of development, I like exploring new technologies, strengthening my prob
 </section>
 <section class="w-full px-4 md:px-10 lg:px-40 py-20 flex justify-center">
 <div class="max-w-[960px] w-full text-center">
-<h2 class="text-3xl md:text-4xl font-black mb-6 text-[#111318] dark:text-white tracking-tight">Let’s Create Something Meaningful</h2>
+<h2 class="text-3xl md:text-4xl font-black mb-6 text-[#111318] dark:text-white tracking-tight">Let's Create Something Meaningful</h2>
 <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-                    I'm currently a student, open to internships, collaborative projects, and learning opportunities. Feel free to reach out if you’d like to work together.
+                    I'm currently a student, open to internships, collaborative projects, and learning opportunities. Feel free to reach out if you'd like to work together.
                 </p>
 <a class="inline-flex h-14 items-center justify-center rounded-lg bg-primary px-8 text-white text-lg font-bold transition hover:bg-primary/90 shadow-lg shadow-primary/30" href="contact.html">
                     Start a Conversation
@@ -247,5 +256,55 @@ Outside of development, I like exploring new technologies, strengthening my prob
 </div>
 </footer>
 </div>
+
+<script>
+// Mobile Menu Toggle
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+
+mobileMenuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    const icon = mobileMenuBtn.querySelector('.material-symbols-outlined');
+    icon.textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+});
+
+// Close mobile menu when clicking on a link
+const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+mobileMenuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        mobileMenuBtn.querySelector('.material-symbols-outlined').textContent = 'menu';
+    });
+});
+
+// Share Resume Function
+function shareResume() {
+    if (navigator.share) {
+        navigator.share({
+            title: 'Shaik Irfan Mohiddin - Resume',
+            text: 'Check out my resume and portfolio!',
+            url: window.location.href
+        }).catch(err => console.log('Error sharing:', err));
+    } else {
+        // Fallback: Copy link to clipboard
+        navigator.clipboard.writeText(window.location.href);
+        alert('Link copied to clipboard!');
+    }
+}
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+</script>
 
 </body></html>
