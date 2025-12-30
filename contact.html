@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-
 <html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Contact - Portfolio</title>
+<title>Contact - Shaik Irfan Mohiddin</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
@@ -41,14 +39,25 @@
 <div class="hidden md:flex items-center gap-9">
 <a class="text-slate-900 dark:text-slate-200 hover:text-primary transition-colors text-sm font-medium leading-normal" href="Portfolio.html">Work</a>
 <a class="text-slate-900 dark:text-slate-200 hover:text-primary transition-colors text-sm font-medium leading-normal" href="index.html">About</a>
-<a class="text-slate-900 dark:text-slate-200 hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Resume</a>
+<a class="text-slate-900 dark:text-slate-200 hover:text-primary transition-colors text-sm font-medium leading-normal" href="index.html#resume">Resume</a>
 <a class="text-slate-900 dark:text-slate-200 text-primary transition-colors text-sm font-medium leading-normal" href="contact.html">Contact</a>
 </div>
-<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-blue-700 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
-<span class="truncate">Hire Me</span>
+<button id="mobileMenuBtn" class="md:hidden p-2 text-slate-900 dark:text-white">
+<span class="material-symbols-outlined">menu</span>
 </button>
 </div>
 </header>
+
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="hidden md:hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
+<nav class="px-6 py-4 flex flex-col gap-4">
+<a class="text-sm font-medium hover:text-primary transition-colors py-2" href="Portfolio.html">Work</a>
+<a class="text-sm font-medium hover:text-primary transition-colors py-2" href="index.html">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors py-2" href="index.html#resume">Resume</a>
+<a class="text-sm font-medium text-primary py-2" href="contact.html">Contact</a>
+</nav>
+</div>
+
 <!-- Main Content -->
 <div class="layout-container flex h-full grow flex-col">
 <div class="px-6 md:px-20 lg:px-40 flex flex-1 justify-center py-10 lg:py-20">
@@ -62,7 +71,7 @@
                                     Let's start a project together
                                 </p>
 <p class="text-slate-500 dark:text-slate-400 text-lg font-normal leading-relaxed">
-                                    Interested in working together? Fill out the form or reach out via email. I'm currently available for freelance projects and open to new opportunities.
+                                    Interested in working together? Fill out the form or reach out via email. I'm currently available for internships, collaborative projects, and learning opportunities.
                                 </p>
 </div>
 <!-- Email Block -->
@@ -77,9 +86,8 @@
 <p class="text-slate-500 dark:text-slate-400 text-sm font-medium uppercase tracking-wider">Follow Me</p>
 <div class="flex flex-wrap gap-4">
 <a class="flex flex-col items-center gap-2 bg-white dark:bg-slate-800 rounded-xl p-4 min-w-[80px] hover:shadow-md transition-shadow group" 
-   href="https://github.com/irfanmohiddin" target="_blank">
+   href="https://github.com/irfanmohiddin" target="_blank" rel="noopener noreferrer">
   <div class="rounded-full bg-slate-100 dark:bg-slate-700 p-3 group-hover:bg-black/10 transition-colors">
-    <!-- GitHub SVG Icon -->
     <svg class="w-6 h-6 text-slate-900 dark:text-white group-hover:text-black" 
          fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.111.82-.261.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.238 1.84 1.238 1.07 1.834 2.809 1.304 3.495.997.108-.774.418-1.305.762-1.605-2.665-.303-5.467-1.334-5.467-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.3 1.23a11.513 11.513 0 0 1 3-.403c1.02.005 2.045.137 3 .403 2.289-1.552 3.295-1.23 3.295-1.23.655 1.652.243 2.873.12 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.625-5.479 5.921.43.371.814 1.102.814 2.222v3.293c0 .319.216.694.825.576C20.565 21.796 24 17.303 24 12c0-6.627-5.373-12-12-12z"/>
@@ -88,13 +96,15 @@
   <p class="text-slate-900 dark:text-white text-xs font-medium">GitHub</p>
 </a>
 
-<a class="flex flex-col items-center gap-2 bg-white dark:bg-slate-800 rounded-xl p-4 min-w-[80px] hover:shadow-md transition-shadow group" href="https://www.linkedin.com/in/shaik-irfan-mohiddin-537589323/">
+<a class="flex flex-col items-center gap-2 bg-white dark:bg-slate-800 rounded-xl p-4 min-w-[80px] hover:shadow-md transition-shadow group" 
+   href="https://www.linkedin.com/in/shaik-irfan-mohiddin-537589323/" target="_blank" rel="noopener noreferrer">
 <div class="rounded-full bg-slate-100 dark:bg-slate-700 p-3 group-hover:bg-primary/10 transition-colors">
 <span class="material-symbols-outlined text-slate-900 dark:text-white group-hover:text-primary">work</span>
 </div>
 <p class="text-slate-900 dark:text-white text-xs font-medium">LinkedIn</p>
 </a>
-<a class="flex flex-col items-center gap-2 bg-white dark:bg-slate-800 rounded-xl p-4 min-w-[80px] hover:shadow-md transition-shadow group" href="https://www.instagram.com/sim_268__/">
+<a class="flex flex-col items-center gap-2 bg-white dark:bg-slate-800 rounded-xl p-4 min-w-[80px] hover:shadow-md transition-shadow group" 
+   href="https://www.instagram.com/sim_268__/" target="_blank" rel="noopener noreferrer">
 <div class="rounded-full bg-slate-100 dark:bg-slate-700 p-3 group-hover:bg-primary/10 transition-colors">
 <span class="material-symbols-outlined text-slate-900 dark:text-white group-hover:text-primary">photo_camera</span>
 </div>
@@ -105,38 +115,64 @@
 </div>
 <!-- Right Column: Form -->
 <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 md:p-8 shadow-sm border border-slate-200 dark:border-slate-800">
-<form class="flex flex-col gap-6">
+<form id="contactForm" class="flex flex-col gap-6">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <label class="flex flex-col flex-1">
-<p class="text-slate-900 dark:text-white text-base font-medium leading-normal pb-2">Name</p>
-<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 focus:border-primary h-14 placeholder:text-slate-400 p-4 text-base font-normal leading-normal transition-all" placeholder="Your Name" type="text"/>
+<p class="text-slate-900 dark:text-white text-base font-medium leading-normal pb-2">Name *</p>
+<input 
+  name="name"
+  required
+  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 focus:border-primary h-14 placeholder:text-slate-400 p-4 text-base font-normal leading-normal transition-all" 
+  placeholder="Your Name" 
+  type="text"/>
 </label>
 <label class="flex flex-col flex-1">
-<p class="text-slate-900 dark:text-white text-base font-medium leading-normal pb-2">Email</p>
-<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 focus:border-primary h-14 placeholder:text-slate-400 p-4 text-base font-normal leading-normal transition-all" placeholder="your@email.com" type="email"/>
+<p class="text-slate-900 dark:text-white text-base font-medium leading-normal pb-2">Email *</p>
+<input 
+  name="email"
+  required
+  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 focus:border-primary h-14 placeholder:text-slate-400 p-4 text-base font-normal leading-normal transition-all" 
+  placeholder="your@email.com" 
+  type="email"/>
 </label>
 </div>
 <label class="flex flex-col flex-1">
 <p class="text-slate-900 dark:text-white text-base font-medium leading-normal pb-2">Project Type</p>
 <div class="relative">
-<select class="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 focus:border-primary h-14 p-4 text-base font-normal leading-normal appearance-none transition-all cursor-pointer">
-<option disabled="" selected="" value="">Select a service</option>
-<option value="ui-design">UI/UX Design</option>
+<select 
+  name="projectType"
+  class="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 focus:border-primary h-14 p-4 text-base font-normal leading-normal appearance-none transition-all cursor-pointer">
+<option value="">Select a project type</option>
 <option value="web-dev">Web Development</option>
-<option value="branding">Branding</option>
+<option value="ui-design">UI/UX Design</option>
+<option value="fullstack">Full-Stack Application</option>
+<option value="collaboration">Collaboration</option>
 <option value="other">Other</option>
 </select>
 </div>
 </label>
 <label class="flex flex-col flex-1">
-<p class="text-slate-900 dark:text-white text-base font-medium leading-normal pb-2">Message</p>
-<textarea class="form-textarea flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 focus:border-primary min-h-[160px] placeholder:text-slate-400 p-4 text-base font-normal leading-normal transition-all" placeholder="Tell me about your project..."></textarea>
+<p class="text-slate-900 dark:text-white text-base font-medium leading-normal pb-2">Message *</p>
+<textarea 
+  name="message"
+  required
+  class="form-textarea flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 focus:border-primary min-h-[160px] placeholder:text-slate-400 p-4 text-base font-normal leading-normal transition-all" 
+  placeholder="Tell me about your project..."></textarea>
 </label>
-<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-4 bg-primary hover:bg-blue-700 transition-colors text-white text-base font-bold leading-normal tracking-[0.015em] shadow-lg shadow-primary/20 mt-2">
+<button 
+  type="submit"
+  class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-4 bg-primary hover:bg-blue-700 transition-colors text-white text-base font-bold leading-normal tracking-[0.015em] shadow-lg shadow-primary/20 mt-2">
 <span class="mr-2">Send Message</span>
 <span class="material-symbols-outlined text-sm font-bold">send</span>
 </button>
 </form>
+<!-- Success Message (Hidden by default) -->
+<div id="successMessage" class="hidden mt-4 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg">
+<p class="text-green-800 dark:text-green-200 text-sm font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">check_circle</span>
+Message sent successfully! I'll get back to you soon.
+</p>
+</div>
 </div>
 </div>
 </div>
@@ -144,9 +180,104 @@
 </div>
 <!-- Footer Simple -->
 <footer class="mt-auto py-8 border-t border-slate-200 dark:border-slate-800">
-<div class="flex flex-col items-center justify-center gap-4 text-center">
+<div class="flex flex-col md:flex-row items-center justify-between gap-4 px-6 md:px-20 lg:px-40 max-w-[1200px] mx-auto">
 <p class="text-slate-500 dark:text-slate-400 text-sm">© 2025 Shaik Irfan Mohiddin. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-slate-500 hover:text-primary transition-colors text-sm font-medium" href="https://www.linkedin.com/in/shaik-irfan-mohiddin-537589323/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+<a class="text-slate-500 hover:text-primary transition-colors text-sm font-medium" href="https://www.instagram.com/sim_268__/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a class="text-slate-500 hover:text-primary transition-colors text-sm font-medium" href="https://github.com/irfanmohiddin" target="_blank" rel="noopener noreferrer">GitHub</a>
+</div>
 </div>
 </footer>
 </div>
+
+<script>
+// Mobile Menu Toggle
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+
+mobileMenuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    const icon = mobileMenuBtn.querySelector('.material-symbols-outlined');
+    icon.textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+});
+
+// Close mobile menu when clicking on a link
+const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+mobileMenuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        mobileMenuBtn.querySelector('.material-symbols-outlined').textContent = 'menu';
+    });
+});
+
+// Contact Form Handling with Google Sheets
+const contactForm = document.getElementById('contactForm');
+const successMessage = document.getElementById('successMessage');
+const submitBtn = contactForm.querySelector('button[type="submit"]');
+
+// Replace this with your Google Apps Script Web App URL
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxnzgGxm8h3YI0k3A8oBW1qaPiKXJuFlDZA-DZcLGFiYVi3NdrQS7kc29ic42wSC97gbw/exec';
+
+contactForm.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    // Disable submit button and show loading state
+    const originalBtnText = submitBtn.innerHTML;
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span class="material-symbols-outlined animate-spin">progress_activity</span> Sending...';
+    
+    // Get form data
+    const formData = new FormData(contactForm);
+    
+    try {
+        // Send data to Google Sheets
+        const response = await fetch(GOOGLE_SCRIPT_URL, {
+            method: 'POST',
+            body: formData
+        });
+        
+        if (response.ok) {
+            // Show success message
+            successMessage.classList.remove('hidden');
+            successMessage.innerHTML = `
+                <p class="text-green-800 dark:text-green-200 text-sm font-medium flex items-center gap-2">
+                    <span class="material-symbols-outlined text-lg">check_circle</span>
+                    Message sent successfully! I'll get back to you soon.
+                </p>
+            `;
+            
+            // Reset form
+            contactForm.reset();
+        } else {
+            throw new Error('Failed to send message');
+        }
+    } catch (error) {
+        // Show error message
+        successMessage.classList.remove('hidden');
+        successMessage.className = 'mt-4 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg';
+        successMessage.innerHTML = `
+            <p class="text-red-800 dark:text-red-200 text-sm font-medium flex items-center gap-2">
+                <span class="material-symbols-outlined text-lg">error</span>
+                Failed to send message. Please try again or email me directly.
+            </p>
+        `;
+        console.error('Form submission error:', error);
+    } finally {
+        // Re-enable submit button
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
+        
+        // Hide message after 5 seconds
+        setTimeout(() => {
+            successMessage.classList.add('hidden');
+            successMessage.className = 'hidden mt-4 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg';
+        }, 5000);
+        
+        // Scroll to message
+        successMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+});
+</script>
+
 </body></html>
